@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+/* rotate box */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    margin-top: 40px;
+    padding: 20px;
+}
+.box{
+    display: flex;
+    width: 70%;
+    
+}
+.heading--text{
+    display: inline;
+    letter-spacing: 10px;
+   
+    height: 20px;
+    padding: 15px;
+    background-color: #04AA6D;
+    color: white;
+    margin-right:20px ;
+    transform:rotate(40deg);
+
+}
+.paragraph--texts{
+    align-items: center;
+}
+.box:hover{
+    background-color: #AABBCC;
+}
+
+.heading--text:hover{
+    background-color: rgb(10,29,29);
+}
+
+
+/*flip box */
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* icon bar*/
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 24px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #04AA6D; /* Add an active/current color */
+  }
